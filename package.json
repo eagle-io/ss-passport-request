@@ -1,0 +1,24 @@
+{
+  "name": "ss-passport-request",
+  "version": "1.0.0",
+  "description": "Exposes passport request public methods",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AVVSDevelopment/ss-passport-request"
+  },
+  "author": {
+    "name": "Vitaly Aminev",
+    "url": "AVVS"
+  },
+  "email": "getstarted@avvs.co",
+  "peerDependencies": {
+    "passport": "*"
+  },
+  "readme": "#Socketstream passport rpc middleware\n##Usage example\n\n#### middleware/passport.coffee  \n    passport    = require 'passport'\n    ssPassport  = require 'ss-passport-request'\n    \n    exports.initialize = (options = {}) ->\n      return passport.initialize()       \n    \n    exports.session = (options = {}) ->\n      return passport.session()  \n    \n    exports.req = (options = {})->\n      return ssPassport\n\n#### rpc/...            \n    req.use \"session\"\n    req.use \"passport.initialize\"\n    req.use \"passport.session\"\n    req.use \"passport.req\"",
+  "_id": "ss-passport-request@0.1.0",
+  "dist": {
+    "shasum": "9b5863f01893b731e575b96a659ed7ca21ae915a"
+  },
+  "_from": "ss-passport-request"
+}
