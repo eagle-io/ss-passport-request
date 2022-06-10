@@ -2,6 +2,7 @@
   "name": "ss-passport-request",
   "version": "1.0.0",
   "description": "Exposes passport request public methods",
+  "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
